@@ -32,8 +32,9 @@ resetBtn.addEventListener("click", () => {
 
 turnO = true;
 boxes.forEach((box) => {
-    h3.innerText = "";
+    
     box.addEventListener("click", () => {
+        h3.innerText = "";
         if (turnO) {
             box.innerText = 'X';
             turnO = false;
