@@ -21,7 +21,7 @@ function resetGame() {
     boxes.forEach((box) => {
         box.disabled = false;
         box.innerText = "";
-        h3.innerText = "";
+        h3.innerText = "'X' Starts";
     })
 }
 
