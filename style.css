@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600;700&family=Inter:wght@300;400;500;600;800&family=Kaisei+Opti:wght@700&family=Kanit:wght@400;500;600&family=Noto+Sans:wght@400;500;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: fit-content;
+    background-color: rgb(110, 216, 61);
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(66, 66, 66);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9px;
+    background-color: rgb(209, 176, 114);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.box-container{
+    background-color: rgb(201, 201, 201);
+    padding: 0.8rem;
+    border-radius: 15px;
+    height: min-content;
+    width: min-content;
+    gap: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+.reset-btn{
+    font-size: 0.9rem;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    width: 6.5rem;
+    height: 2.3rem;
+    background-color: black;
+    color: #fff;
+}
+
+.reset-btn:hover{
+    background-color: #1b1b1b;
+}
