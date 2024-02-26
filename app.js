@@ -13,8 +13,11 @@ let winPattern = [
     [6, 7, 8]
 ];
 
+let count1 = 0;
+
 function resetGame() {
     turnO = true;
+    count1 = 0;
     boxes.forEach((box) => {
         box.disabled = false;
         box.innerText = "";
@@ -22,7 +25,6 @@ function resetGame() {
     })
 }
 
-let count1 = 0;
 
 resetBtn.addEventListener("click", () => {
     resetGame();
@@ -42,7 +44,7 @@ boxes.forEach((box) => {
         box.disabled = true;
         count1++;
         checkAns();
-        if (count1 == 9 && h3.innerText=="") {
+        if (count1 == 9 && h3.innerText == "") {
             h3.innerText = "IT'S A DRAW!";
         }
     });
