@@ -18,10 +18,11 @@ let count1 = 0;
 function resetGame() {
     turnO = true;
     count1 = 0;
+    h3.innerText = "'X' Starts";
     boxes.forEach((box) => {
         box.disabled = false;
         box.innerText = "";
-        h3.innerText = "'X' Starts";
+        
     })
 }
 
