@@ -46,7 +46,7 @@ boxes.forEach((box) => {
         box.disabled = true;
         count1++;
         checkAns();
-        if (count1 == 9 && h3.innerText == "") {
+        if (count1 == 9 && (h3.innerText != "WINNER: X" || h3.innerText != "WINNER: O")) {
             h3.innerText = "IT'S A DRAW!";
         }
     });
