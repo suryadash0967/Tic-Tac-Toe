@@ -21,7 +21,7 @@ function resetGame() {
     boxes.forEach((box) => {
         box.disabled = false;
         box.innerText = "";
-        h3.innerText = "X's Turn";
+        h3.innerText = "";
     })
 }
 
@@ -34,12 +34,10 @@ turnO = true;
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if (turnO) {
-            h3.innerText = "O's Turn";
             box.innerText = 'X';
             turnO = false;
         }
         else {
-            h3.innerText = "X's Turn";
             box.innerText = 'O';
             turnO = true;
         }
