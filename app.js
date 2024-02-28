@@ -38,10 +38,12 @@ boxes.forEach((box) => {
         h3.innerText = "";
         if (turnO) {
             box.innerText = 'X';
+            box.style.color = 'red';
             turnO = false;
         }
         else {
             box.innerText = 'O';
+            box.style.color = 'blue';
             turnO = true;
         }
         box.disabled = true;
